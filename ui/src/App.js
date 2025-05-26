@@ -13,7 +13,7 @@ function App() {
   return (
     <ul>
       {movies.map(({title, year, director}) => (
-        <li key={title}>{title} {year} - {director}!!!</li>
+        <li key={title}>{title} {year} - {director}</li>
       ))}
     </ul>
   );

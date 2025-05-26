@@ -9,12 +9,12 @@ services:
       - ./api:/app
       - /app/node_modules
   ui:
-    build: ./my-app
-    container_name: react-my-app
+    build: ./ui
+    container_name: react-ui
     ports:
       - '3000:3000'
     volumes:
-      - ./my-app:/app
+      - ./ui:/app
       - /app/node_modules
     stdin_open: true
     tty: true
